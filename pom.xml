@@ -8,34 +8,58 @@
 	<version>1.1-SNAPSHOT</version>
 	<name>connect-java-logging - core logging services</name>
 
+	<description>
+		core functional logging for platform - loads services to enhance each log.
+		we recommend async logger with log4j2.
+	</description>
+
+	<url>https://clearpointnz.github.io/connect/</url>
+	<developers>
+		<developer>
+			<email>richard@bluetrainsoftware.com</email>
+			<id>rvowles</id>
+			<name>Richard Vowles</name>
+			<organization>on behalf of ClearPoint NZ Ltd</organization>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>Apache License 2.0</name>
+			<url>https://opensource.org/licenses/Apache-2.0</url>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:git@github.com:clearpointnz/connect-java-logging.git</connection>
+		<developerConnection>scm:git:git@github.com:clearpointnz/connect-java-logging.git</developerConnection>
+		<url>git@github.com:clearpointnz/connect-java-logging.git</url>
+		<tag>HEAD</tag>
+	</scm>
+
   <dependencies>
     <dependency>
       <groupId>cd.connect.composites.java</groupId>
       <artifactId>connect-composite-logging</artifactId>
-      <version>[1, 2)</version>
+      <version>[1.1, 2)</version>
     </dependency>
 
     <dependency>
       <groupId>cd.connect.common</groupId>
       <artifactId>connect-java-jackson</artifactId>
-      <version>[1, 2)</version>
+      <version>[1.1, 2)</version>
     </dependency>
 
     <dependency>
       <groupId>cd.connect.composites.java</groupId>
       <artifactId>connect-composite-test</artifactId>
-      <version>[1, 2)</version>
+      <version>[1.1, 2)</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
 
   <build>
     <plugins>
-	    <plugin>
-		    <groupId>com.bluetrainsoftware.maven</groupId>
-		    <artifactId>release-pom</artifactId>
-		    <version>1.6-SNAPSHOT</version>
-	    </plugin>
       <plugin>
         <groupId>io.repaint.maven</groupId>
         <artifactId>tiles-maven-plugin</artifactId>
