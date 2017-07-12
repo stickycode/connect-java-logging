@@ -10,9 +10,9 @@ insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
-indent_tyle = space
+indent_style = space
 
 [*.adoc]
 trim_trailing_whitespace = false
-indent_tyle = space
+indent_style = space
 
